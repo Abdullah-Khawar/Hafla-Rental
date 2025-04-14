@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TAILWIND PLAYCDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- TITLE -->
+    <title>Hafla Rental</title>
+  </head>
+
+  <body>
+    <!-- -------------------------------------------------------------------- -->
+
+    <header
+      class="bg-gradient-to-r from-indigo-900 via-purple-900 to-purple-800 shadow-xl sticky top-0 z-50 backdrop-blur-sm bg-opacity-95"
+    >
+      <!-- Subtle animated accent bar at the top -->
+      <div
+        class="h-1 w-full bg-gradient-to-r from-pink-500 via-purple-400 to-indigo-500 animate-gradient-x"
+      ></div>
+
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <!-- Enhanced Logo Area -->
+          <a href="#" id="logo" class="flex items-center overflow-hidden group">
+            <div
+              class="absolute -left-2 -top-2 w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-600 rounded-full opacity-20 blur-xl group-hover:opacity-40 transition-all duration-700"
+            ></div>
+            <img
+              src="/img/logo1.png"
+              alt="Logo"
+              class="h-14 w-auto object-contain transform scale-150 origin-left relative z-10 drop-shadow-lg"
+            />
+          </a>
+
+          <!-- Desktop Navigation with enhanced styling -->
+          <div class="hidden md:flex items-center space-x-8" id="nav-menu">
+            <ul class="flex items-center space-x-8">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-white hover:text-pink-300 font-semibold transition-all duration-300 py-2 px-1 border-b-2 border-transparent hover:border-pink-400 relative group"
+                >
+                  <span
+                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-purple-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                  Home
+                </a>
+              </li>
+
+              <!-- Services Dropdown with enhanced effects -->
+              <li class="relative group">
+                <a
+                  href="#products"
+                  class="text-white hover:text-pink-300 font-semibold transition-all duration-300 py-2 px-1 border-b-2 border-transparent hover:border-pink-400 flex items-center group-hover:text-pink-300 relative"
+                >
+                  <span
+                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-purple-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                  Services
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1 transform group-hover:rotate-180 transition-transform duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+                <ul
+                  class="absolute hidden group-hover:block bg-gradient-to-b from-indigo-900 to-purple-900 rounded-xl shadow-2xl mt-2 w-72 py-2 max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-pink-500 scrollbar-track-purple-900 border border-purple-500/30 backdrop-blur-sm bg-opacity-95 transform opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
+                >
+                  <li class="px-2">
+                    <a
+                      href="./services/service_01/service1.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Popcorn & Other Food Stuff
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_02/service2.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Face Painting & Balloon Bending
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_03/service3.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Birthday Packages
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_04/service4.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Bouncy & Slides
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_05/service5.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Bubble Show
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_06/service6.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Cartoon Mascots
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_07/service7.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Balloon Decoration
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_08/service8.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Games for Kids
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_09/service9.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Magic Show
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_10/service10.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Pony Ride, Camel Ride and Falcon
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_12/service12.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Artists
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_13/service13.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Arts & Crafts
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_14/service14.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Water Slides & Combos
+                      </div>
+                    </a>
+                  </li>
+                  <li class="px-2">
+                    <a
+                      href="./services/service_15/service15.html"
+                      target="_blank"
+                      class="block px-4 py-2 text-purple-100 hover:bg-purple-800/70 hover:text-white transition-colors rounded-lg my-1 group"
+                    >
+                      <div class="flex items-center">
+                        <span
+                          class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+                        ></span>
+                        Kids Furniture
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="/about.html"
+                  class="text-white hover:text-pink-300 font-semibold transition-all duration-300 py-2 px-1 border-b-2 border-transparent hover:border-pink-400 relative group"
+                >
+                  <span
+                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-purple-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  target="_blank"
+                  class="relative px-6 py-3 text-white font-semibold overflow-hidden group"
+                >
+                  <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-pink-500 to-purple-600 rounded-full"
+                  ></span>
+                  <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 opacity-30 group-hover:rotate-90 ease"
+                  ></span>
+                  <span class="relative flex items-center">
+                    <span class="mr-2">Contact Us</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Enhanced Mobile Menu Toggle -->
+          <div class="md:hidden relative">
+            <button
+              class="text-white hover:text-pink-300 focus:outline-none p-2 rounded-full bg-purple-800/50 backdrop-blur-sm hover:bg-purple-700/70 transition-all duration-300"
+              id="nav-toggle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Enhanced Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <div
+            class="mt-2 px-2 pt-2 pb-3 space-y-1 bg-gradient-to-b from-indigo-900 to-purple-900 rounded-xl shadow-2xl border border-purple-500/30 backdrop-blur-sm transition-all duration-300"
+          >
+            <a
+              href="index.html"
+              class="block px-4 py-3 text-white hover:bg-purple-800/70 rounded-lg transition-all duration-300 group flex items-center"
+            >
+              <span
+                class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+              ></span>
+              Home
+            </a>
+            <a
+              href="#products"
+              class="block px-4 py-3 text-white hover:bg-purple-800/70 rounded-lg transition-all duration-300 group flex items-center"
+            >
+              <span
+                class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+              ></span>
+              Services
+            </a>
+            <a
+              href="/about.html"
+              class="block px-4 py-3 text-white hover:bg-purple-800/70 rounded-lg transition-all duration-300 group flex items-center"
+            >
+              <span
+                class="w-1 h-0 group-hover:h-full bg-pink-500 rounded-full transition-all duration-300 mr-2"
+              ></span>
+              About Us
+            </a>
+            <div class="px-3 py-2">
+              <a
+                href="/contact.html"
+                target="_blank"
+                class="relative block w-full py-3 text-white font-semibold overflow-hidden group rounded-lg"
+              >
+                <span
+                  class="absolute inset-0 w-full h-full bg-gradient-to-r from-pink-500 to-purple-600"
+                ></span>
+                <span
+                  class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 opacity-30 group-hover:rotate-90 ease"
+                ></span>
+                <span class="relative flex items-center justify-center">
+                  <span class="mr-2">Contact Us</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Add subtle animated accent at the bottom of the header -->
+      <div
+        class="h-px w-full bg-gradient-to-r from-purple-500/30 via-pink-500/20 to-indigo-500/30"
+      ></div>
+    </header>
+
+    <!-- Add necessary additional styles -->
+    <style>
+      @keyframes gradient-x {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .animate-gradient-x {
+        background-size: 200% 200%;
+        animation: gradient-x 15s ease infinite;
+      }
+
+      /* Scrollbar styling */
+      .scrollbar-thin::-webkit-scrollbar {
+        width: 6px;
+      }
+      .scrollbar-thumb-pink-500::-webkit-scrollbar-thumb {
+        background: #ec4899;
+        border-radius: 3px;
+      }
+      .scrollbar-track-purple-900::-webkit-scrollbar-track {
+        background: #4c1d95;
+      }
+    </style>
+
+    <!-- JavaScript for mobile menu toggle (keep this same as your original) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navToggle = document.getElementById("nav-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        navToggle.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+      });
+    </script>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <main class="main">
+      <!-- Service-6 -->
+      <section class="products section" id="products">
+        <h2 class="section__title section__title-gradient products__line">
+          Cartoon Mascots
+        </h2>
+
+        <div class="container">
+          <div class="row">
+            <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+              <div class="inner-column">
+                <div class="sec-title">
+                  <h2 class="sec-title-h2 animate">
+                    Don’t miss out on this opportunity to add a unique touch to
+                    your event. Contact us today to reserve your Cartoon Mascots
+                    and give your guests a fun and memorable experience they
+                    won’t forget!
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-grid" id="image-grid">
+          <img src="service6_images/1.jpg" alt="Face Painting 1" />
+          <img src="service6_images/2.jpg" alt="Face Painting 2" />
+          <img src="service6_images/3.jpg" alt="Balloon Bending 1" />
+          <img src="service6_images/4.jpg" alt="Balloon Bending 2" />
+          <img src="service6_images/5.jpg" alt="Face Painting 1" />
+          <img src="service6_images/6.jpg" alt="Face Painting 2" />
+          <img src="service6_images/7.jpg" alt="Balloon Bending 1" />
+          <img src="service6_images/8.jpg" alt="Balloon Bending 2" />
+          <img src="service6_images/9.jpg" alt="Face Painting 1" />
+          <img src="service6_images/10.jpg" alt="Face Painting 2" />
+          <img src="service6_images/11.jpg" alt="Balloon Bending 1" />
+          <img src="service6_images/12.jpg" alt="Balloon Bending 2" />
+          <img src="service6_images/13.jpg" alt="Face Painting 1" />
+          <img src="service6_images/14.jpg" alt="Face Painting 2" />
+          <img src="service6_images/15.jpg" alt="Balloon Bending 1" />
+          <img src="service6_images/16.jpg" alt="Balloon Bending 2" />
+          <img src="service6_images/17.jpg" alt="Face Painting 1" />
+          <img src="service6_images/18.jpg" alt="Face Painting 2" />
+          <img src="service6_images/19.jpg" alt="Balloon Bending 1" />
+          <img src="service6_images/20.jpg" alt="Balloon Bending 2" />
+          <img src="service6_images/21.jpg" alt="Face Painting 1" />
+          <img src="service6_images/22.jpg" alt="Face Painting 2" />
+          <img src="service6_images/23.jpg" alt="Balloon Bending 1" />
+          <img src="service6_images/24.jpg" alt="Balloon Bending 2" />
+          <img src="service6_images/25.jpg" alt="Face Painting 1" />
+          <img src="service6_images/26.jpg" alt="Face Painting 2" />
+          <img src="service6_images/27.jpg" alt="Face Painting 1" />
+          <img src="service6_images/28.jpg" alt="Face Painting 2" />
+        </div>
+        <!-- <button id="load-more" class="load-more">Load More</button> -->
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section
+        class="bg-gradient-to-br from-gray-900 to-black py-16 relative overflow-hidden"
+        id="why-choose-us"
+      >
+        <div
+          class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-200 via-transparent to-transparent"
+        ></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+          <h2
+            class="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+          >
+            Why Choose Us?
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-blue-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">Professionalism</h3>
+                </div>
+                <p class="text-gray-300">
+                  Our expert event décor artists can turn your ideas into
+                  reality with their experience and creativity.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-yellow-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">Quality Products</h3>
+                </div>
+                <p class="text-gray-300">
+                  We use only high-quality materials for long-lasting and
+                  elegant event décor.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-purple-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">Customization</h3>
+                </div>
+                <p class="text-gray-300">
+                  Your imagination is our mission. Our décor artists ensure to
+                  create a unique design based on your vision.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-green-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">
+                    Wide Service Area
+                  </h3>
+                </div>
+                <p class="text-gray-300">
+                  We proudly serve Dubai. Wherever your event is, we're here to
+                  make it extraordinary with our face painting and balloon
+                  bending services.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">
+                    Affordable Pricing
+                  </h3>
+                </div>
+                <p class="text-gray-300">
+                  We offer competitive and transparent prices, ensuring that you
+                  get the best value for your investment.
+                </p>
+              </div>
+            </div>
+
+            <div class="hidden md:flex items-center justify-center">
+              <div
+                class="w-full max-w-md aspect-square bg-gradient-to-br from-blue-300/20 to-purple-300/20 rounded-full flex items-center justify-center"
+              >
+                <div
+                  class="w-5/6 h-5/6 bg-white/10 rounded-full backdrop-blur-lg shadow-2xl"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- FOOTER SECTION -->
+    <footer id="footer" class="!bg-blue-700 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Logo and Description -->
+          <div>
+            <a href="#" class="inline-block mb-6">
+              <img src="img/logo1.png" alt="logo" class="h-14 w-auto" />
+            </a>
+            <p class="text-white text-sm mt-4 max-w-xs leading-relaxed">
+              Providing premium party rental services for all your celebration
+              needs. We make your special moments truly unforgettable.
+            </p>
+          </div>
+
+          <!-- Company -->
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-white relative">
+              Company
+              <span class="block w-12 h-1 bg-yellow-400 mt-2"></span>
+            </h3>
+            <ul class="space-y-3 mt-6">
+              <li>
+                <a
+                  href="#aboutus"
+                  class="text-white hover:text-yellow-300 transition-colors duration-300"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="text-white hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Our Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Popular Services -->
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-white relative">
+              Popular Services
+              <span class="block w-12 h-1 bg-yellow-400 mt-2"></span>
+            </h3>
+            <ul class="space-y-3 mt-6">
+              <li>
+                <a
+                  href="/service_01/service1.html"
+                  target="_blank"
+                  class="text-white hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Popcorn & Other Food Stuff
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/service_02/service2.html"
+                  target="_blank"
+                  class="text-white hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Face Painting & Balloon Bending
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/service_03/service3.html"
+                  target="_blank"
+                  class="text-white hover:text-yellow-300 transition-colors duration-300"
+                >
+                  Birthday Packages
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Connect With Us and Working Hours -->
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-white relative">
+              Connect With Us
+              <span class="block w-12 h-1 bg-yellow-400 mt-2"></span>
+            </h3>
+
+            <!-- Social Media Links -->
+            <div class="flex gap-4 mt-6">
+              <a
+                href="https://www.facebook.com/profile.php?id=61559737323602&mibextid=ZbWKwL"
+                target="_blank"
+                class="bg-blue-600 text-white rounded-md px-6 py-3 flex items-center justify-center space-x-2 hover:bg-blue-500 transition-colors duration-300"
+              >
+                <i class="ri-facebook-fill text-xl"></i>
+                <span>Facebook</span>
+              </a>
+
+              <a
+                href="https://www.instagram.com/haflarental?igsh=dmY5b2U4N2phYmo1"
+                target="_blank"
+                class="bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-md px-6 py-3 flex items-center justify-center space-x-2 hover:from-purple-500 hover:to-pink-400 transition-colors duration-300"
+              >
+                <i class="ri-instagram-line text-xl"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+
+            <!-- Working Hours -->
+            <h3 class="text-lg font-bold mt-10 mb-4 text-white relative">
+              Working Hours
+              <span class="block w-12 h-1 bg-yellow-400 mt-2"></span>
+            </h3>
+            <div class="bg-blue-800 p-4 rounded-md">
+              <p class="text-white font-bold flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 mr-2 text-yellow-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                7AM TO 11AM
+              </p>
+              <p class="text-blue-200 text-sm mt-2">Every day of the week</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div
+          class="mt-12 pt-6 border-t border-blue-600 flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="flex items-center mb-4 md:mb-0">
+            <a href="#" class="text-white mr-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
+              </svg>
+            </a>
+            <p class="text-white text-sm">
+              © 2024 hafla rental. All rights reserved
+            </p>
+          </div>
+
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-white hover:text-yellow-300 text-sm transition-colors duration-300"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-white hover:text-yellow-300 text-sm transition-colors duration-300"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- Load ScrollReveal library for scroll animations -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"
+      defer
+    ></script>
+
+    <!-- Zoho SalesIQ Live Chat Initialization -->
+    <script>
+      // Ensure the $zoho object exists to prevent errors
+      window.$zoho = window.$zoho || {};
+
+      // Ensure $zoho.salesiq exists, initializing it with a ready function
+      // This function can be modified to run custom actions when SalesIQ is loaded
+      $zoho.salesiq = $zoho.salesiq || {
+        ready: function () {},
+      };
+    </script>
+
+    <!-- Load Zoho SalesIQ Chat Widget -->
+    <script
+      id="zsiqscript"
+      src="https://salesiq.zohopublic.com/widget?wc=siq90eeeaafe91bb6365f559b33e9c066b6"
+      defer
+    ></script>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- WhatsApp Icon -->
+    <a
+      href="https://wa.me/971582486176"
+      class="whatsapp-float fixed bottom-8 right-6 bg-green-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 backdrop-blur-md bg-opacity-80 border border-white/20 hover:scale-110 hover:shadow-green-500/50"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Phone Icon -->
+    <a
+      href="tel:0582486176"
+      class="phone-float fixed bottom-8 left-6 bg-blue-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-blue-600 transition-colors duration-300 z-50"
+      target="_blank"
+      aria-label="Call Us"
+    >
+      <i class="fa-solid fa-phone text-2xl"></i>
+      <!-- Updated to fa-solid for Phone -->
+    </a>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <script src="service6.js" defer></script>
+
+    <!-- -------------------------------------------------------------------- -->
+  </body>
+</html>
