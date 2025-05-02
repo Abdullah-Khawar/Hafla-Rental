@@ -86,62 +86,62 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       img: "img/pro1.png",
       title: "Bouncy & Slides",
-      link: "/service_14/service14.html",
+      link: "/services/service_14/service14.html",
     },
     {
       img: "/img/pro2.png",
       title: "Balloon Decor",
-      link: "/service_07/service7.html",
+      link: "/services/service_07/service7.html",
     },
     {
       img: "/img/pro3.png",
       title: "Birthday Packages",
-      link: "/service_03/service3.html",
+      link: "/services/service_03/service3.html",
     },
     {
       img: "/img/pro4.png",
       title: "Magic Show",
-      link: "/service_09/service9.html",
+      link: "/services/service_09/service9.html",
     },
     {
       img: "/img/pro5.png",
       title: "Face Painting & Balloon Bending",
-      link: "/service_02/service2.html",
+      link: "/services/service_02/service2.html",
     },
     {
       img: "/img/pro6.png",
       title: "Popcorn & Cotton Candy",
-      link: "/service_01/service1.html",
+      link: "/services/service_01/service1.html",
     },
     {
       img: "/img/pro8.png",
       title: "Kids Furniture",
-      link: "/service_15/service15.html",
+      link: "/services/service_15/service15.html",
     },
     {
       img: "/img/pro9.png",
       title: "Bubble Show",
-      link: "/service_05/service5.html",
+      link: "/services/service_05/service5.html",
     },
     {
       img: "/img/pro12.png",
       title: "Fire Show",
-      link: "/service_12/service12.html",
+      link: "/services/service_12/service12.html",
     },
     {
       img: "/img/pro13.png",
       title: "Games for Kids",
-      link: "/service_08/service8.html",
+      link: "/services/service_08/service8.html",
     },
     {
       img: "/img/pro15.png",
       title: "Pony Horse Ride & Camel Ride",
-      link: "/service_10/service10.html",
+      link: "/services/service_10/service10.html",
     },
     {
       img: "/img/pro17.png",
       title: "Cartoon Mascots",
-      link: "/service_06/service6.html",
+      link: "/services/service_06/service6.html",
     },
   ];
 
@@ -160,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ) {
       const product = products[i];
       const productCard = document.createElement("li");
+      productCard.classList.add("cards_item", "transition-all", "duration-300", "hover:scale-105", "hover:shadow-lg");
       productCard.classList.add("cards_item");
       productCard.innerHTML = `
         <div class="card">
@@ -167,9 +168,12 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="card_image">
               <img src="${product.img}" />
             </div>
-            <div class="card_content">
+            
+            <!-- TITLE IF U WANT TO SHOW -->
+            <!-- <div class="card_content">
               <h2 class="card_title">${product.title}</h2>
-            </div>
+            </div> -->
+          
           </a>
         </div>
       `;
