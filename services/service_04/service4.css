@@ -82,25 +82,25 @@
     background-position: center center;
     background-size: cover;
   }
-  .carousel .one { background-image: url(heroPics/1.webp); }
-  .carousel .two { background-image: url(heroPics/2.jpeg); }
-  .carousel .three { background-image: url(heroPics/3.jpg); }
-  .carousel .four { background-image: url(heroPics/4.jpeg); }
-  .carousel .five { background-image: url(heroPics/5.jpeg); }
-  .carousel .six { background-image: url(heroPics/6.jpg); }
-  .carousel .seven { background-image: url(heroPics/7.jpg); }
-  .carousel .eight { background-image: url(heroPics/8.jpg); }
-  .carousel .nine { background-image: url(heroPics/9.jpg); }
-  .carousel .ten { background-image: url(heroPics/10.jpg); }
-  .carousel .eleven { background-image: url(heroPics/11.jpg); }
-  .carousel .twelve { background-image: url(heroPics/12.jpg); }
-  .carousel .thirteen { background-image: url(heroPics/13.jpg); }
-  .carousel .fourteen { background-image: url(heroPics/14.jpg); }
-  .carousel .fifteen { background-image: url(heroPics/15.jpg); }
-  .carousel .sixteen { background-image: url(heroPics/16.jpg); }
-  .carousel .seventeen { background-image: url(heroPics/17.jpg); }
-  .carousel .eighteen { background-image: url(heroPics/18.jpg); }
-  .carousel .nineteen { background-image: url(heroPics/19.jpg); }
+  .carousel .one { background-image: url(../../heroPics/1.webp); }
+  .carousel .two { background-image: url(../../heroPics/2.jpeg); }
+  .carousel .three { background-image: url(../../heroPics/3.jpg); }
+  .carousel .four { background-image: url(../../heroPics/4.jpeg); }
+  .carousel .five { background-image: url(../../heroPics/5.jpeg); }
+  .carousel .six { background-image: url(../../heroPics/6.jpg); }
+  .carousel .seven { background-image: url(../../heroPics/7.jpg); }
+  .carousel .eight { background-image: url(../../heroPics/8.jpg); }
+  .carousel .nine { background-image: url(../../heroPics/9.jpg); }
+  .carousel .ten { background-image: url(../../heroPics/10.jpg); }
+  .carousel .eleven { background-image: url(../../heroPics/11.jpg); }
+  .carousel .twelve { background-image: url(../../heroPics/12.jpg); }
+  .carousel .thirteen { background-image: url(../../heroPics/13.jpg); }
+  .carousel .fourteen { background-image: url(../../heroPics/14.jpg); }
+  .carousel .fifteen { background-image: url(../../heroPics/15.jpg); }
+  .carousel .sixteen { background-image: url(../../heroPics/16.jpg); }
+  .carousel .seventeen { background-image: url(../../heroPics/17.jpg); }
+  .carousel .eighteen { background-image: url(../../heroPics/18.jpg); }
+  .carousel .nineteen { background-image: url(../../heroPics/19.jpg); }
 
   #slide-btn-1:checked ~ .one,
   #slide-btn-2:checked ~ .two,

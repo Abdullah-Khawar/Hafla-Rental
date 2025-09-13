@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TAILWIND PLAYCDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="gallery.css" />
+
+    <!-- TITLE -->
+    <title id="page-title">Hafla Rental</title>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="../index.html" class="nav__logo">
+          <img src="../img/logo1.png" alt="logo" />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="../index.html#products" class="nav__link">
+                Services
+                <i class="ri-arrow-down-s-line nav__arrow"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../about.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="../contact.html" class="nav__link">
+                Contact Us
+                <i class="ri-arrow-right-line nav__arrow"></i>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-function-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <main class="main">
+      <!-- Dynamic Service Section -->
+      <section class="products section" id="products">
+        <!-- Gallery Header -->
+        <div
+          class="service-gallery-header text-center py-12 px-6 bg-gradient-to-br from-[#121826] via-[#0E1626] to-[#0B1321] shadow-xl rounded-2xl"
+        >
+          <h2
+            class="gallery-title text-4xl font-extrabold text-pink-500 tracking-wide drop-shadow-lg"
+            id="service-title"
+          >
+            Loading...
+          </h2>
+          <div
+            class="gallery-subtitle text-lg text-gray-300 mt-3 tracking-wide"
+            id="service-description"
+          >
+            Loading...
+          </div>
+          <div class="mt-5">
+            <div
+              class="h-1 w-24 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto rounded-full"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Enhanced Image Gallery Structure -->
+        <div class="service-gallery-container">
+          <div class="bg-pattern">
+            <div class="edge-highlight">
+              <!-- All images -->
+              <div class="service-gallery-wrapper">
+                <div class="image-grid" id="image-grid">
+                  <!-- Images will be dynamically loaded here -->
+                </div>
+              </div>
+
+              <!-- See More Button (will be shown/hidden based on image count) -->
+              <div class="see-more-container" id="see-more-container" style="display: none;">
+                <button id="see-more-btn" class="see-more-button">
+                  <span>See More</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox for image viewing -->
+        <div id="gallery-lightbox" class="lightbox">
+          <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="" alt="Lightbox Image" />
+            <div class="lightbox-nav">
+              <button id="prev-btn" class="lightbox-nav-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button id="next-btn" class="lightbox-nav-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------- -->
+
+      <!-- Why Choose Us Section -->
+      <section
+        class="bg-gradient-to-br from-gray-900 to-black py-16 relative overflow-hidden"
+        id="why-choose-us"
+      >
+        <div
+          class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-200 via-transparent to-transparent"
+        ></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+          <h2
+            class="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+          >
+            Why Choose Us?
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-blue-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">Professionalism</h3>
+                </div>
+                <p class="text-gray-300">
+                  Our expert event décor artists can turn your ideas into
+                  reality with their experience and creativity.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-yellow-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">Quality Products</h3>
+                </div>
+                <p class="text-gray-300">
+                  We use only high-quality materials for long-lasting and
+                  elegant event décor.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-purple-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">Customization</h3>
+                </div>
+                <p class="text-gray-300">
+                  Your imagination is our mission. Our décor artists ensure to
+                  create a unique design based on your vision.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-green-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">
+                    Wide Service Area
+                  </h3>
+                </div>
+                <p class="text-gray-300">
+                  We proudly serve Dubai. Wherever your event is, we're here to
+                  make it extraordinary with our face painting and balloon
+                  bending services.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">
+                    Competitive Pricing
+                  </h3>
+                </div>
+                <p class="text-gray-300">
+                  We offer the best value for your money with competitive
+                  pricing and no hidden costs.
+                </p>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-red-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">On-Time Delivery</h3>
+                </div>
+                <p class="text-gray-300">
+                  We understand the importance of timing. Our team ensures
+                  punctual delivery and setup for your event.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-pink-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">Customer Satisfaction</h3>
+                </div>
+                <p class="text-gray-300">
+                  Your satisfaction is our priority. We go above and beyond to
+                  ensure your event is memorable and successful.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-teal-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">24/7 Support</h3>
+                </div>
+                <p class="text-gray-300">
+                  Our dedicated support team is available 24/7 to assist you
+                  with any questions or concerns.
+                </p>
+              </div>
+
+              <div
+                class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="flex items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 mr-4 text-orange-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <h3 class="text-xl font-bold text-white">Guaranteed Quality</h3>
+                </div>
+                <p class="text-gray-300">
+                  We stand behind our work with a satisfaction guarantee. If
+                  you're not happy, we'll make it right.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------- -->
+
+      <!-- FAQ Section -->
+      <section class="py-16 bg-gray-50" id="faq">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Find answers to common questions about our services and booking process.
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="space-y-4">
+              <!-- FAQ Item 1 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200" onclick="toggleFAQ('faq1')">
+                  <span class="text-lg font-semibold text-gray-900">How far in advance should I book?</span>
+                  <svg id="faq1-icon" class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="faq1-content" class="hidden px-6 pb-4">
+                  <p class="text-gray-600">We recommend booking at least 2-3 weeks in advance to ensure availability, especially during peak seasons and weekends. However, we can often accommodate last-minute requests based on availability.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200" onclick="toggleFAQ('faq2')">
+                  <span class="text-lg font-semibold text-gray-900">What areas do you serve?</span>
+                  <svg id="faq2-icon" class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="faq2-content" class="hidden px-6 pb-4">
+                  <p class="text-gray-600">We proudly serve all areas of Dubai and the surrounding UAE. We can deliver and set up our services anywhere within Dubai, including residential areas, hotels, event venues, and outdoor locations.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200" onclick="toggleFAQ('faq3')">
+                  <span class="text-lg font-semibold text-gray-900">Do you provide setup and cleanup services?</span>
+                  <svg id="faq3-icon" class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="faq3-content" class="hidden px-6 pb-4">
+                  <p class="text-gray-600">Yes! Our professional team handles all setup and cleanup. We arrive before your event to set everything up and return after the event to clean up and collect all equipment. You just need to enjoy your event!</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200" onclick="toggleFAQ('faq4')">
+                  <span class="text-lg font-semibold text-gray-900">What payment methods do you accept?</span>
+                  <svg id="faq4-icon" class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="faq4-content" class="hidden px-6 pb-4">
+                  <p class="text-gray-600">We accept cash, bank transfers, and major credit cards. A 50% deposit is required to secure your booking, with the remaining balance due on the day of the event.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200" onclick="toggleFAQ('faq5')">
+                  <span class="text-lg font-semibold text-gray-900">What if it rains or bad weather?</span>
+                  <svg id="faq5-icon" class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="faq5-content" class="hidden px-6 pb-4">
+                  <p class="text-gray-600">We monitor weather conditions closely. For outdoor events, we can provide covered setups or move activities indoors if space permits. We'll work with you to ensure your event goes smoothly regardless of weather conditions.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200" onclick="toggleFAQ('faq6')">
+                  <span class="text-lg font-semibold text-gray-900">Can I customize the services for my event?</span>
+                  <svg id="faq6-icon" class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="faq6-content" class="hidden px-6 pb-4">
+                  <p class="text-gray-600">Absolutely! We love creating custom experiences. Whether you want specific themes, colors, or unique combinations of services, our team will work with you to create the perfect setup for your event.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 7 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200" onclick="toggleFAQ('faq7')">
+                  <span class="text-lg font-semibold text-gray-900">Do you have insurance coverage?</span>
+                  <svg id="faq7-icon" class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="faq7-content" class="hidden px-6 pb-4">
+                  <p class="text-gray-600">Yes, we are fully insured and licensed. All our equipment and services are covered by comprehensive insurance, giving you peace of mind for your event.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 8 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200" onclick="toggleFAQ('faq8')">
+                  <span class="text-lg font-semibold text-gray-900">What is your cancellation policy?</span>
+                  <svg id="faq8-icon" class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="faq8-content" class="hidden px-6 pb-4">
+                  <p class="text-gray-600">Cancellations made 48 hours or more before the event receive a full refund. Cancellations within 48 hours are subject to a 50% cancellation fee. We understand emergencies happen, so please contact us to discuss your situation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- FOOTER -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="../index.html" class="footer__logo">
+            <img src="../img/logo1.png" alt="logo" />
+          </a>
+          <p class="footer__description">
+            We provide the best event services for your special occasions.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Services</h3>
+          <ul class="footer__links">
+            <li><a href="service.html?id=1" class="footer__link">Bouncy Castle</a></li>
+            <li><a href="service.html?id=2" class="footer__link">Face Painting</a></li>
+            <li><a href="service.html?id=3" class="footer__link">Birthday Packages</a></li>
+            <li><a href="service.html?id=4" class="footer__link">Magician</a></li>
+            <li><a href="service.html?id=5" class="footer__link">Bubble Show</a></li>
+            <li><a href="service.html?id=6" class="footer__link">Cartoon Mascots</a></li>
+            <li><a href="service.html?id=7" class="footer__link">Balloon Decoration</a></li>
+            <li><a href="service.html?id=8" class="footer__link">Games for Kids</a></li>
+            <li><a href="service.html?id=9" class="footer__link">Magician</a></li>
+            <li><a href="service.html?id=10" class="footer__link">Pony Ride</a></li>
+            <li><a href="service.html?id=12" class="footer__link">Fire Performer</a></li>
+            <li><a href="service.html?id=13" class="footer__link">Art Crafts</a></li>
+            <li><a href="service.html?id=14" class="footer__link">Water Slides</a></li>
+            <li><a href="service.html?id=15" class="footer__link">Kids Furniture</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__links">
+            <li><a href="../about.html" class="footer__link">About Us</a></li>
+            <li><a href="../contact.html" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contact</h3>
+          <ul class="footer__links">
+            <li><a href="tel:+971501234567" class="footer__link">+971 50 123 4567</a></li>
+            <li><a href="mailto:info@hafla-rental.com" class="footer__link">info@hafla-rental.com</a></li>
+            <li><a href="#" class="footer__link">Dubai, UAE</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__copy">
+        <p>&copy; 2024 Hafla Rental. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="fixed bottom-6 left-6 z-50">
+      <a
+        href="tel:+971501234567"
+        class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="fixed bottom-6 right-6 z-50">
+      <a
+        href="https://wa.me/971501234567"
+        target="_blank"
+        class="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- SCRIPTS -->
+    <script src="gallery.js" defer></script>
+    <script src="service-data.js" defer></script>
+    <script src="service.js" defer></script>
+  </body>
+</html>
